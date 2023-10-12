@@ -2,6 +2,7 @@
 #define WIFI_SSID "SSID"
 #define WIFI_PASS "PASSWORD"
 #define BOT_TOKEN "TOKEN"
+#define ID "ID"
 
 #include <FastBot.h>
 FastBot bot(BOT_TOKEN);
@@ -24,7 +25,7 @@ void loop() {
   else {
     if (dry == 0) {
     tone (5,  500,  1000);
-    bot.sendMessage("Где-то протечка", "User_ID");
+    bot.sendMessage("Где-то протечка", ID);
     delay(100000);
   }
   
